@@ -34,7 +34,7 @@ def get_answers():
                 hoshino.logger.error(f"读取答案之书时发生错误{type(e)}")
                 return None
     else:
-        hoshino.logger.error(f"目录下未找到答案之书")
+        hoshino.logger.error("目录下未找到答案之书")
     keys = list(words.keys())
     key = random.choice(keys)
     return words[key]["answer"]
